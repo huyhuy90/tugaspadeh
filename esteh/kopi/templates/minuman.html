@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Halaman Utama
+{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+    h2{
+        color: rgb(72, 124, 107);
+    }
+    p {
+        color: rgb(59, 126, 104);
+    }
+    header a + a:before {
+        content: " | ";
+        margin: 0 5px;
+    }
+    header a {
+        text-decoration: none;
+    }
+</style>
+{% endblock style %}
+
+{% block menu %}
+{% endblock menu %}
+
+{% block content %}
+<h1>DAFTAR MENU MINUMAN</h1>
+<p>Teh Poci</p>
+<p>Lemon Tea</p>
+<p>Milo High School</p>
+<p>Kopi Must Try</p>
+<p>Strawberry Smooty</p>
+{% endblock content %}

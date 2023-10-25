@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+    <!-- ini title -->
+    {% endblock title %}
+    </title>
+
+    <center>
+        <header>
+            <a href="{% url 'home' %}">Home </a>
+            <a href="{% url 'makanan' %}">makanan </a>
+            <a href="{% url 'minuman' %}">minuman</a>
+        </header>
+    </center>
+
+    {% block style %}
+    <!-- ini adalah style -->
+    {% endblock style %}
+</head>
+<body>
+    {% block menu %}
+    <!-- disini adalah sisi dari menu -->
+    {% endblock menu %}
+
+    {% block content %}
+    <!-- disini isis dari web content -->
+    {% endblock content %}
+</body>
+</html>

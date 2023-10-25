@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Halaman Utama
+{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+    h2{
+        color: rgb(72, 124, 107);
+    }
+    p {
+        color: rgb(59, 126, 104);
+    }
+    header a + a:before {
+        content: " | ";
+        margin: 0 5px;
+    }
+    header a {
+        text-decoration: none;
+    }
+</style>
+{% endblock style %}
+
+{% block menu %}
+{% endblock menu %}
+
+{% block content %}
+<h1>SELAMAT DATANG DI RESTORAN</h1>
+<h2>CEMARA INDAH</h2>
+<p>Resto Cemara Indah adalah salah satu restoran yang populer di kalangan anak SMA di daerah Surabaya dan sekitarnya. Resto Cemara Indah memiliki berbagai macam menu yang khas sehingga resto tersebut memiliki daya tarik tersendiri.</p>
+{% endblock content %}
